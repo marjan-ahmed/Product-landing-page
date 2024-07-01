@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background: #eeeeee;
+}
+
+header, #nav-bar {
+    padding: 8px 39px;
+}
+
+#nav-bar {
+    margin-top: -50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    list-style-type: none;
+    padding-left: 6.6vw;
+}
+
+.nav-link:nth-child(1) {
+    padding-left: 58vw;
+}
+
+#heading-1 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 18px;
+    margin-right: 14px;
+}
+
+#email {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 7px 7px;
+    width: 18%;
+}
+
+#submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
+    width: 10%;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 5px;
+    letter-spacing: 0.10rem;
+    background: #f7d40f;
+    border: none;
+}
+
+#submit:hover {
+    transition: 0.3s;
+    background: #f3a108;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+i {
+    color: #ff8800;
+    font-size: 55px;
+    padding-top: 70px;
+    margin: 0 auto;
+}
+
+#features {
+    width: 67%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin: 40px 17vw;
+}
+
+h2 {
+    padding-left: 8vw;
+    margin-top: -8vh;
+}
+
+#fea-para {
+    padding-left: 8vw;
+}
+
+#video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 37px;
+}
+
+#pricing {
+    margin-top: 15vh;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 15.5vw;
+}
+
+.box {
+    width: 300px;
+    height: 310px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.price-header {
+    text-align: center;
+    padding-top: 12px;
+    background: rgb(211, 211, 211);
+    font-size: 14.5px;
+    font-weight: 800;
+}
+
+#price {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 22px;
+}
+
+#box-para {
+    text-align: center;
+    margin-left: 0.5vw;
+    margin-top: 5px;
+    padding-top: 10px;
+}
+
+.btn {
+    width: 35%;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #f7d40f;
+    border: none;
+}
+
+.btn:hover {
+    transition: 0.3s;
+    background-color: #fcbc0c;
+}
+
+.footer {
+    width: 73%;
+    height: 12vh;
+    margin: 0 auto;
+    margin-left: 14vw;
+    margin-top: 30px;
+    background: #dbdbdb;
+    border-radius: 2px;
+}
+
+#footer-li {
+    list-style-type: none;
+    float: left;
+    padding-top: 18px;
+    padding-left: 20px;
+}
+
+#footer-li:nth-of-type(1) {
+    padding-left: 56vw;
+}
+
+.copyright {
+    font-size: 14px;
+    padding-top: 41px;
+    text-align: end;
+    padding-right: 25px;
+    color: rgb(68, 68, 68);
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media (max-width: 768px) {
+    header, #nav-bar {
+        padding: 8px 20px;
+    }
+
+    #nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
+    .nav-link:nth-child(1) {
+        padding-left: 0;
+    }
+
+    #email, #submit {
+        width: 50%;
+    }
+
+    h2, #fea-para {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    #features, .boxes, .footer {
+        width: 100%;
+        margin: 0;
+    }
+
+    #footer-li:nth-of-type(1) {
+        padding-left: 0;
+    }
+
+    .copyright {
+        text-align: center;
+        padding-right: 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    header, #nav-bar {
+        padding: 8px 10px;
+    }
+
+    #nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
+    .nav-link:nth-child(1) {
+        padding-left: 0;
+    }
+
+    #email, #submit {
+        width: 70%;
+    }
+
+    h2, #fea-para {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    #features, .boxes, .footer {
+        width: 100%;
+        margin: 0;
+    }
+
+    .box {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #footer-li {
+        padding-left: 0;
+        text-align: center;
+        float: none;
+    }
+
+    .copyright {
+        text-align: center;
+        padding-right: 0;
+    }
+}
